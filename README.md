@@ -3,6 +3,7 @@
 Example on operations for TM1637 8-char display module, STM32F104C8T6 with embedded Rust used.
 
 The final result should be like this: 
+
 ![Final result](img/result.gif)
 
 # Build & Run
