@@ -113,7 +113,9 @@ Some pieces of core are based on [cortex-m-quickstart](https://github.com/rust-e
 Thanks to Cortex-M Team at Group of Embedded Rust at The Rust Team for your wonderful framework.
 
 Work here cannot be done without support from the community. 
-Thanks to everyone at `rust.cc` community for offering help, debugging devices and love!
-And thanks to /u/dakesew, /u/K900_ and /u/jechase at subreddit /r/rust for advice and supports!
+Thanks to everyone at [rust.cc](http://rust.cc) community for offering help, devices and love!
+And thanks to [/u/dakesew](http://reddit.com/u/dakesew), [/u/K900_](http://reddit.com/u/K900_)
+and [/u/jechase](http://reddit.com/u/jechase) at subreddit [/r/rust](http://reddit.com/r/rust) 
+for advice and supports!
 
 Thanks to my girlfriend who has never appeared, emmm...
