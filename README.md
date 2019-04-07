@@ -109,8 +109,9 @@ as well.
 # Future plans
 
 - Reuse hardware timer for mutliple screens
-- Use hardware I2C instead of software simulated I2C
-- Present a HH:MM clock example
+- Use hardware I2C instead of software simulated I2C implemetation
+- Present a HH:MM clock example with symbol `:` blinking
+- Write an abstract portable TM1637 library that can be used on other MCU brands
 
 # Contributing
 
