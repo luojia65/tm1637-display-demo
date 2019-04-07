@@ -118,4 +118,7 @@ And thanks to [/u/dakesew](http://reddit.com/u/dakesew), [/u/K900_](http://reddi
 and [/u/jechase](http://reddit.com/u/jechase) at subreddit [/r/rust](http://reddit.com/r/rust) 
 for advice and supports!
 
+Special thanks to my group member @WetABQ, @ChinaHDJ and @PeratX for supportive ideas! 
+Dalao TQL! Mobike, mobike!
+
 Thanks to my girlfriend who has never appeared, emmm...
