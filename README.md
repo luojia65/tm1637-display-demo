@@ -19,6 +19,8 @@ You need some simple hardware requirements:
 - a TM1637 8-char display module
 - ST-LINK v2 debugger
 
+This won't cost much, and you may easily buy them at eBay, Taobao, Tmall, Alibaba, JD or Idlefish.
+
 ## Software requirements 
 
 Some softwares are required to build this project. If you still do not know how to install after this 
@@ -27,9 +29,9 @@ All installations require an Internet connection.
 
 ### Install Rust
 
-To build this project, you may also need to have [Rust](https://rust-lang.org) installed. 
+To build this project, you also need to have [Rust](https://rust-lang.org) compiler installed. 
 Follow instructions on [install page](https://www.rust-lang.org/tools/install), or run `rustup update`
-if already installed. 
+if already installed. You may check your Rust version using `rustc -V`.
 
 ### A special Rust target
 
@@ -107,8 +109,7 @@ Luo Jia <luojia65@hust.edu.cn>, Wuhan, China
 
 # Special thanks
 
-Some pieces of core are based on [cortex-m-quickstart]. 
-[cortex-m-quickstart]: (https://github.com/rust-embedded/cortex-m-quickstart)
+Some pieces of core are based on [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart).
 Thanks to Cortex-M Team at Group of Embedded Rust at The Rust Team for your wonderful framework.
 
 Work here cannot be done without support from the community. 
