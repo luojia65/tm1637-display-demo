@@ -1,4 +1,4 @@
-# tm1637-playground
+# tm1637-display-demo
 
 Example on operations for TM1637 8-char display module, STM32F104C8T6 with embedded Rust used. 
 I used software simulated I2C becaude TM1637 does not follow common I2C protocol as it does not
@@ -100,6 +100,18 @@ After this step, you'll see something like `halted: PC: 0x0800638a` in GDB termi
 command `continue` and press enter, the terminal blocks after a `Continuing.` line. And at 
 this time, you should see the final result similiar to what the first section shows.
 
+# More examples
+
+If you have three TM1637 screens, you can try to display on *all* of them! Try the example at 
+`examples/three_screens.rs`! Note: you may change the pin you connect with source code modified
+as well.
+
+# Future plans
+
+- Reuse hardware timer for mutliple screens
+- Use hardware I2C instead of software simulated I2C
+- Present a HH:MM clock example
+
 # Contributing
 
 All kinds of contributions are welcomed! You may fire an issue or open pull requests if there is a 
@@ -112,7 +124,7 @@ Luo Jia <luojia65@hust.edu.cn>, Wuhan, China
 # Special thanks
 
 Some pieces of core are based on [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart).
-Thanks to Cortex-M Team at Group of Embedded Rust at The Rust Team for your wonderful framework.
+Thanks to Cortex-M Team at Group of Embedded Rust at The Rust Team for your wonderful framework!
 
 Work here cannot be done without support from the community. 
 Thanks to everyone at [rust.cc](http://rust.cc) community for offering help, devices and love!
