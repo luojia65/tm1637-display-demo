@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug GDB",
+            "type": "gdb",
+            "request": "attach",
+            "executable": "./target/thumbv7m-none-eabi/debug/stm32test",
+            "target": "localhost:3333",
+            "cwd": "${workspaceRoot}",
+            "gdbpath": "arm-none-eabi-gdb",
+            "remote": true,
+            "autorun": [
+                "monitor reset halt",
+                "load"
+            ]
+        }
+    ]
+}
