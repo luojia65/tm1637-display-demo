@@ -1,6 +1,8 @@
 # tm1637-playground
 
-Example on operations for TM1637 8-char display module, STM32F104C8T6 with embedded Rust used.
+Example on operations for TM1637 8-char display module, STM32F104C8T6 with embedded Rust used. 
+I used software simulated I2C becaude TM1637 does not follow common I2C protocol as it does not
+require an I2C address.
 
 The final result should be like this: 
 
@@ -118,7 +120,7 @@ And thanks to [/u/dakesew](http://reddit.com/u/dakesew), [/u/K900_](http://reddi
 and [/u/jechase](http://reddit.com/u/jechase) at subreddit [/r/rust](http://reddit.com/r/rust) 
 for advice and supports!
 
-Special thanks to my group member @WetABQ, @ChinaHDJ and @PeratX for supportive ideas! 
-Dalao TQL! Mobike, mobike!
+Special thanks to my group member [WetABQ](http://github.com/WetABQ), [HDJ](http://github.com/ChinaHDJ)
+and [PeratX](http://github.com/PeratX) for supportive ideas! Dalao TQL! Mobike, mobike!
 
 Thanks to my girlfriend who has never appeared, emmm...
