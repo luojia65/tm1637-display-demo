@@ -30,7 +30,7 @@ fn main() -> ! {
     let mut tim = Timer::tim1(dp.TIM1, 1.mhz(), clocks, &mut rcc.apb2);
     let mut tm1637 = TM1637::new(dio, clk, &mut tim);
 
-    let mut syst = Timer::syst(cp.SYST, 2.hz(), clocks);
+    let mut syst = Timer::syst(cp.SYST, 20.hz(), clocks);
     let mut a = [1, 2, 3, 4];
     loop {
         tm1637.write_cmd(0x44);

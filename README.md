@@ -1,6 +1,6 @@
 # tm1637-display-demo
 
-Example on operations for TM1637 8-char display module, STM32F104C8T6 with embedded Rust used. 
+Example on operations for TM1637 8-char display module, STM32F103C8T6 with embedded Rust used. 
 I used software simulated I2C becaude TM1637 does not follow common I2C protocol as it does not
 require an I2C address.
 
@@ -17,8 +17,8 @@ We assume that all the terminals mentioned in follow text is opened in the local
 
 You need some simple hardware requirements:
 
-- a STM32F104C8T6 module ('MCU board')
-- a TM1637 8-char display module
+- STM32F103C8T6 module ('MCU board')
+- TM1637 8-char display module
 - ST-LINK v2 debugger
 
 This won't cost much, and you may easily buy them at eBay, Taobao, Tmall, Alibaba, JD or Idlefish.
