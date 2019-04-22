@@ -17,9 +17,9 @@ We assume that all the terminals mentioned in follow text is opened in the local
 
 You need some simple hardware requirements:
 
-- STM32F103C8T6 module ('MCU board')
-- TM1637 8-char display module
-- ST-LINK v2 debugger
+- A STM32F103C8T6 'Blue Pill' module ('MCU board')
+- A TM1637 8-char display module
+- A ST-LINK v2 debugger
 
 This won't cost much, and you may easily buy them at eBay, Taobao, Tmall, Alibaba, JD or Idlefish.
 
