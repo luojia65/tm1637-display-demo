@@ -94,24 +94,25 @@ cargo run
 ```
 
 You'll see in the output that cargo is compiling this project, GDB is launched by cargo shortly after, 
-GDB connects to OpenOCD and pauses for further instructions. 
+then GDB connects to OpenOCD and pauses for further instructions. 
 
 After this step, you'll see something like `halted: PC: 0x0800638a` in GDB terminal. Input GDB
 command `continue` and press enter, the terminal blocks after a `Continuing.` line. And at 
-this time, you should see the final result similiar to what the first section shows.
+this time, you should see the final result similiar to what the first section shows. Congratulations!
 
-# More examples
+If all these above are too easy to be a challenge for you, here comes some exercises. Good luck!
 
-If you have three TM1637 screens, you can try to display on *all* of them! Try the example at 
-`examples/three_screens.rs`! Note: you may change the pin you connect with source code modified
-as well.
+# Exercises
 
-# Future plans
-
-- Reuse hardware timer for mutliple screens
-- Use hardware I2C instead of software simulated I2C implemetation
-- Present a HH:MM clock example with symbol `:` blinking
-- Write an abstract portable TM1637 library that can be used on other MCU brands
+1. Modify the `src/main.rs` code to modify three screens at the same time. (In one single loop.) 
+   If possible, reuse the hardware timer `TIM1` for all three screens.
+2. Modify code to use hardware I2C instead of software simulated I2C implemetation.
+3. Search the Internet to find out how to control the `:`-shaped mark in the middle. 
+   After that, present a HH:MM clock with symbol `:` blinking every second.
+4. Write library allowing other chips to operate TM1637 screens. 
+   You may consider relying on digital `InputPin` and `OutputPin` in the `embedded-hal` crate.
+   
+Key for exercise 1 may be found at `examples/three_screens.rs`.
 
 # Contributing
 
