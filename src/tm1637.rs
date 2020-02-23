@@ -1,4 +1,4 @@
-use embedded_hal::{timer::CountDown, digital::{OutputPin, InputPin}};
+use embedded_hal::{timer::CountDown, digital::v2::{OutputPin, InputPin}};
 use nb::block;
 
 pub struct TM1637<'chip, DIO, CLK, TIMER> {
@@ -65,7 +65,7 @@ where
         block!(self.timer.wait()).unwrap();
         self.clk.set_high();
         block!(self.timer.wait()).unwrap();
-        while self.dio.is_high() {}
+        while let Ok(true) = self.dio.is_high() {}
     }
 
     pub fn write_cmd(&mut self, cmd: u8) {
